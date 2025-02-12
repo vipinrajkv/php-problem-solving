@@ -8,4 +8,15 @@ function checkSubstring($string, $searchString) {
 $string = "code with php,  php program!";
 $searchString = "php";
 echo checkSubstring($string,$searchString);
+echo '<br>';
+
+function checkSubstringOnStringCount($string, $searchString) {
+   
+    if (substr_count($string, $searchString) > 0 ) {
+        return "String found";
+    }
+    return "String not found";
+}
+echo checkSubstringOnStringCount($string,$searchString);
+echo '<br>';
 ?>
