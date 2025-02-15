@@ -1,21 +1,19 @@
-/**
- Given an array of n integers, find the third largest element.
-  All the elements in the array are distinct integers.
- */<?php 
+<?php 
+/** Given an array of n integers, find the third largest element.
+ *  All the elements in the array are distinct integers.
+ */
 // PHP program to find the smallest, second smallest, and third smallest elements in an array
 
 function findSmallestSecondSmallestThirdSmallest($arr) 
 {
     $arr_size = count($arr);
 
-    // There should be at least three elements
     if ($arr_size < 3) 
     { 
         echo "Invalid Input: Array should have at least three elements.\n"; 
         return; 
     }
 
-    // Initialize smallest, second smallest, and third smallest
     $smallest = PHP_INT_MAX;
     $second_smallest = PHP_INT_MAX;
     $third_smallest = PHP_INT_MAX;
